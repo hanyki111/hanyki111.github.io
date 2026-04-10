@@ -1,0 +1,50 @@
+baseURL = 'https://hanyki111.github.io/'
+title = 'hanyki111'
+theme = 'PaperMod'
+paginate = 10
+
+defaultContentLanguage = 'en'
+
+[languages]
+  [languages.en]
+    languageName = 'English'
+    weight = 1
+    [languages.en.params]
+      subtitle = "Notes on AI agents, orchestration, and the things they don't know"
+  [languages.ko]
+    languageName = '한국어'
+    weight = 2
+    title = 'hanyki111'
+    [languages.ko.params]
+      subtitle = 'AI 에이전트, 오케스트레이션, 그리고 에이전트가 모르는 것들에 대한 기록'
+
+[params]
+  env = 'production'
+  description = 'Notes on AI agents and multi-agent orchestration'
+  author = 'hanyki111'
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowShareButtons = false
+  ShowToc = true
+
+  [params.homeInfoParams]
+    Title = 'Hi there'
+    Content = 'Writing about AI coding agents, multi-agent orchestration, and the epistemological challenges of making agents aware of their own ignorance.'
+
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/hanyki111'
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[markup]
+  [markup.highlight]
+    style = 'monokai'
+    lineNos = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
