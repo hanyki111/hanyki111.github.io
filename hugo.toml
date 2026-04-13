@@ -32,6 +32,7 @@ defaultContentLanguage = 'en'
   ShowCodeCopyButtons = true
   ShowShareButtons = false
   ShowToc = true
+  comments = true
 
   [params.homeInfoParams]
     Title = 'Hi there'
